@@ -1,0 +1,15 @@
+
+$first-color: green;
+$second-color: black;
+
+h1 {
+  color: $first-color;
+}
+
+h2 {
+  background-color: green;
+}
+
+body {
+  background-color: $second-color;
+}

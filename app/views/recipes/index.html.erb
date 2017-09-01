@@ -1,0 +1,13 @@
+<h1>All the Recipes</h1>
+<p>
+<% @recipes.each do |recipe| %>
+<div>
+  <%="Type of fish: " + recipe.name %><br>
+  <%="Prices of fish: $" + recipe.ingredients %><br>
+  <%="Description of fish: " + recipe.steps %><br>
+</div>
+<% end %>
+<br>
+<br>
+<%= @test %><br>
+<a href="/../buy_fish_url">buy the fish</a></p>
