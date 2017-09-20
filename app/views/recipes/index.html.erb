@@ -1,13 +1,13 @@
-<h1>All the Recipes</h1>
-<p>
-<% @recipes.each do |recipe| %>
+<p><%= @counter %></p>
+
 <div>
-  <%="Type of fish: " + recipe.name %><br>
-  <%="Prices of fish: $" + recipe.ingredients %><br>
-  <%="Description of fish: " + recipe.steps %><br>
+  <% @recipes.each do |recipe| %>
+    <div>
+      <div>
+     "Type of recipe: "  <%= recipe.title %><br>
+      <%="recipe ingredents: $" + recipe.ingredients %><br>
+      <%="stemps: " + recipe.directions %><br>
+      </div>
+    </div>
+  <% end %>
 </div>
-<% end %>
-<br>
-<br>
-<%= @test %><br>
-<a href="/../buy_fish_url">buy the fish</a></p>

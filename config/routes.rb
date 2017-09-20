@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   post "/recipes" => "recipes#create"
   get "/recipes/:id" => "recipes#show"
 
-
+  get "/signup" => 'users#new'
+  post "/users" => 'users#create'
 end
